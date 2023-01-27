@@ -1,18 +1,16 @@
 import { useState } from "react";
 import { Todo } from "../../types/Todo";
 import { Todos } from "../Todos";
-import "./App.css";
-import { v4 as uuid } from "uuid";
 
 export function App() {
   const [todos, setTodos] = useState<Todo[]>([
-    { id: uuid(), text: "Get some eggs" },
-    { id: uuid(), text: "Mow lawn" },
-    { id: uuid(), text: "Buy gift" },
+    { id: crypto.randomUUID(), text: "Get some eggs" },
+    { id: crypto.randomUUID(), text: "Mow lawn" },
+    { id: crypto.randomUUID(), text: "Buy gift" },
   ]);
 
   const todoCreate = (text: string) => {
-    setTodos((todos) => [...todos, { id: uuid(), text }]);
+    setTodos((todos) => [...todos, { id: crypto.randomUUID(), text }]);
   };
 
   const todoDelete = (id: string) => {

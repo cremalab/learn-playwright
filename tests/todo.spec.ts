@@ -7,7 +7,7 @@ test.use({
 
 test("Has initial todos", async ({ page }) => {
   await page.goto("http://localhost:3000");
-  await expect(page).toHaveTitle(/Toda/);
+  await expect(page).toHaveTitle(/Todo App/);
   await expect(page.getByText("Get some eggs")).toBeVisible();
   await expect(page.getByText("Mow lawn")).toBeVisible();
   await expect(page.getByText("Buy gift")).toBeVisible();
