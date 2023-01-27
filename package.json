@@ -20,8 +20,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test:playwright": "playwright test",
+    "test": "playwright test",
+    "test:unit": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

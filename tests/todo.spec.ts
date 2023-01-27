@@ -27,3 +27,5 @@ test("Adds todos", async ({ page }) => {
     await expect(result).toBeVisible();
   }
 });
+
+// TODO - Write test for deleting todos
